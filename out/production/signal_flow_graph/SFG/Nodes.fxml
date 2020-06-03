@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="540.0" prefWidth="1062.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="SFG.NodesController">
+   <Button fx:id="solveButton" layoutX="455.0" layoutY="475.0" mnemonicParsing="false" onAction="#calculateOverallTF"
+           prefHeight="45.0" prefWidth="190.0" text="Overall T.F.">
+      <font>
+         <Font name="Arial" size="16.0"/>
+      </font>
+   </Button>
+   <Button fx:id="clearButton" layoutX="337.0" layoutY="479.0" mnemonicParsing="false" onAction="#clearGain"
+           prefHeight="38.0" prefWidth="76.0" text="Clear">
+      <font>
+         <Font name="Arial" size="15.0"/>
+      </font>
+   </Button>
+   <TextField fx:id="fromTextField" layoutX="79.0" layoutY="424.0" prefHeight="36.0" prefWidth="76.0"
+              promptText="Node1">
+      <font>
+         <Font name="Arial" size="16.0"/>
+      </font>
+   </TextField>
+   <TextField fx:id="toTextField" layoutX="219.0" layoutY="425.0" prefHeight="31.0" prefWidth="76.0" promptText="Node2">
+      <font>
+         <Font name="Arial" size="16.0"/>
+      </font>
+   </TextField>
+   <TextField fx:id="fromTextField2" layoutX="79.0" layoutY="480.0" prefHeight="36.0" prefWidth="76.0"
+              promptText="Node1">
+      <font>
+         <Font name="Arial" size="16.0"/>
+      </font>
+   </TextField>
+   <TextField fx:id="toTextField2" layoutX="219.0" layoutY="480.0" prefHeight="36.0" prefWidth="76.0"
+              promptText="Node2">
+      <font>
+         <Font name="Arial" size="16.0"/>
+      </font>
+   </TextField>
+   <Label fx:id="from" layoutX="14.0" layoutY="425.0" prefHeight="33.0" prefWidth="65.0" text="From :">
+      <font>
+         <Font name="Arial" size="16.0"/>
+      </font>
+   </Label>
+   <Label fx:id="to" layoutX="172.0" layoutY="428.0" prefHeight="31.0" prefWidth="47.0" text="To :">
+      <font>
+         <Font name="Arial" size="16.0"/>
+      </font>
+   </Label>
+   <Label fx:id="gain" layoutX="357.0" layoutY="427.0" prefHeight="33.0" prefWidth="65.0" text="Gain :">
+      <font>
+         <Font name="Arial" size="16.0"/>
+      </font>
+   </Label>
+   <TextField fx:id="gainTextField" layoutX="452.0" layoutY="424.0" prefHeight="36.0" prefWidth="76.0"
+              promptText="Gain">
+      <font>
+         <Font name="Arial" size="16.0"/>
+      </font>
+   </TextField>
+   <Button fx:id="addButton" layoutX="569.0" layoutY="424.0" mnemonicParsing="false" onAction="#drawGain"
+           prefHeight="36.0" prefWidth="76.0" text="Add">
+      <font>
+         <Font name="Arial" size="16.0"/>
+      </font>
+   </Button>
+   <Label fx:id="from1" layoutX="14.0" layoutY="481.0" prefHeight="33.0" prefWidth="65.0" text="From :">
+      <font>
+         <Font name="Arial" size="16.0"/>
+      </font>
+   </Label>
+   <Label fx:id="to1" layoutX="172.0" layoutY="482.0" prefHeight="31.0" prefWidth="47.0" text="To :">
+      <font>
+         <Font name="Arial" size="16.0"/>
+      </font>
+   </Label>
+   <Label layoutX="674.0" layoutY="472.0" prefHeight="33.0" prefWidth="355.0"
+          text="Enter the values between nodes then press &quot;Overall T.F.&quot; to" textOverrun="CLIP">
+      <font>
+         <Font name="Arial" size="13.0"/>
+      </font>
+   </Label>
+   <Label layoutX="674.0" layoutY="493.0" prefHeight="31.0" prefWidth="355.0"
+          text="calculate the over all transfer function using Mason Formula.">
+      <font>
+         <Font name="Arial" size="13.0"/>
+      </font>
+   </Label>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: White;">
+      <children>
+         <Canvas fx:id="can" height="410.0" width="1062.0"/>
+      </children>
+   </AnchorPane>
+</AnchorPane>
